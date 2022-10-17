@@ -32,13 +32,8 @@
           }
         },
         {
-          "name": "@electron-forge/maker-dmg",
-          "config": {
-            "options" : {
-              "icon": "icons/icon.icns"
-          }
-          }
-        },
+          "name": "@electron-forge/maker-zip"
+          },
         {
           "name": "@electron-forge/maker-deb",
           "config": {
