@@ -2,7 +2,7 @@
   "name": "epicgamewebelectron",
   "productName": "epicgamewebelectron",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "epic games",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -19,23 +19,35 @@
   "license": "MIT",
   "config": {
     "forge": {
-      "packagerConfig": {},
+      "packagerConfig": {
+        "icon": "icons/icon.png"
+      },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
           "config": {
-            "name": "my_app"
+            "name": "epicgamewebelectron",
+            "iconUrl": "https://sillyangel.ml/icons/icon.png",
+            "setupIcon": "icons/icon.ico"
           }
         },
         {
-          "name": "@electron-forge/maker-zip",
-          "platforms": [
-            "darwin"
-          ]
+          "name": "@electron-forge/maker-dmg",
+          "config": {
+            "options" : {
+              "icon": "icons/icon.icns"
+          }
+          }
         },
         {
           "name": "@electron-forge/maker-deb",
-          "config": {}
+          "config": {
+            "options" : {
+              "maintainer": "Sillyangel",
+              "homepage": "https://sillyangel.ml",
+              "icon": "icons/icon.png"
+            }
+          }
         },
         {
           "name": "@electron-forge/maker-rpm",
