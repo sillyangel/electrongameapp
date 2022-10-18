@@ -7,7 +7,7 @@ just have mario
 
 ## **1.1.0**
 Added Tray Icon<br>
-testing support for dmg files and other things<br>
+~~testing support for dmg files and other things<br>~~
 Added Icons to Setup.exe<br>
 Added icon <br>
 Added ``'.github/CODEOWNERS'``<br>
