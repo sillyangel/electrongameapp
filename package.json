@@ -1,7 +1,7 @@
 {
   "name": "epicgamewebelectron",
   "productName": "epicgamewebelectron",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "epic games",
   "main": "src/index.js",
   "scripts": {
@@ -9,7 +9,24 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "echo \"No linting configured\""
+    "build": "electron-builder"
+  },
+  "build": {
+    "appId": "electrongameapp",
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "installerIcon": "icon.ico",
+      "uninstallerIcon": "icon.ico",
+      "uninstallDisplayName": "electrongameapp uninstaller",
+      "license": "license.md",
+      "allowToChangeInstallationDirectory": true
+    }
   },
   "keywords": [],
   "author": {
