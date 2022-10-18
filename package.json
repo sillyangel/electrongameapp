@@ -44,8 +44,7 @@
           "name": "@electron-forge/maker-squirrel",
           "config": {
             "name": "epicgamewebelectron",
-            "iconUrl": "https://cdn.sillyangel.ml/icon.ico",
-            "setupIcon": "icons/icon.ico"
+            "setupIcon": "icon.ico"
           }
         },
         {
