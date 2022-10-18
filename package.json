@@ -1,7 +1,7 @@
 {
   "name": "epicgamewebelectron",
   "productName": "epicgamewebelectron",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "epic games",
   "main": "src/index.js",
   "scripts": {
@@ -27,7 +27,7 @@
           "name": "@electron-forge/maker-squirrel",
           "config": {
             "name": "epicgamewebelectron",
-            "iconUrl": "https://sillyangel.ml/icons/icon.png",
+            "iconUrl": "https://cdn.sillyangel.ml/icon.ico",
             "setupIcon": "icons/icon.ico"
           }
         },
